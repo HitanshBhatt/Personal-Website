@@ -124,7 +124,7 @@ section .title::after{
     color: rgb(41, 212, 184);
 }
 .navbar.sticky .menu li a:hover{
-    color: rgb(252, 0, 0);
+    color: rgb(41, 212, 184);
 }
 
 /* menu btn styling */
@@ -266,10 +266,10 @@ section .title::after{
     background: none;
 }
 
-/* interests section styling */
+/* interests section styling */ 
 .interests{
     color:#fff;
-    background: #111;
+    background: black;
 }
 .interests .title::before,
 .title::before{
