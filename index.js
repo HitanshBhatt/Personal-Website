@@ -35,8 +35,8 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Student", "Leader", "Programmer", "Developer"], // "Aviation Enthusiast"
-        typeSpeed: 100,
+        strings: ["Student Engineer", "Leader", "Developer"], // "Aviation Enthusiast", "Developer"
+        typeSpeed: 75,
         backSpeed: 60,
         loop: true
     });
@@ -69,8 +69,8 @@ $(document).ready(function(){
 	    Particles.init({
 		    selector: '.background',
 		    connectParticles: true,
-            color: ['#DC143C', "#DA0463", '#404B69', '#DBEDF3', '#FF69B4', '#FF0000', '#15f4ee', '#39ff14'],
-            speed: 0.3
+            color: ['#DC143C', "#DA0463",'#404B69', '#DBEDF3', '#ADD8E6', '#5A5A5A'],// '#FF69B4', '#FF0000', '#15f4ee', '#39ff14'],
+            speed: 0.150
         });
     }
 })
