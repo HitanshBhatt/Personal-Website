@@ -1,5 +1,6 @@
 /*  import google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
 
 *{
     margin: 0;
@@ -23,7 +24,7 @@ html{
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: rgb(252, 0, 0);
 }
 
 /* all similar content styling codes */
@@ -36,7 +37,8 @@ section{
     margin: auto;
 }
 .about, .interests, .skills, .projects, .teams, .contact,footer{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 20px;
 }
 .about .about-content, 
 .interests .int-content,
@@ -55,7 +57,7 @@ section .title{
     font-weight: 500;
     margin-bottom: 60px;
     padding-bottom: 20px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
 }
 section .title::before{
     content: "";
@@ -84,7 +86,7 @@ section .title::after{
     width: 100%;
     z-index: 999;
     padding: 30px 0;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
     transition: all 0.3s ease;
 }
 /*.navbar.sticky{
@@ -97,7 +99,7 @@ section .title::after{
     justify-content: space-between;
 }
 .navbar .logo a{
-    color: rgba(241, 151, 151, 0.973);
+    color: rgb(238, 80, 80);
     font-size: 35px;
     font-weight: 600;
 }
@@ -114,9 +116,9 @@ section .title::after{
 }
 .navbar .menu li a{
     display: block;
-    color: crimson;
+    color: rgb(220, 20, 60);
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
     margin-left: 25px;
     transition: color 0.3s ease;
 }
@@ -167,17 +169,18 @@ section .title::after{
     display: flex;
     /*background: url("Background.jpg") no-repeat center;*/
     height: 100vh;
-    color: rgb(0, 0, 0); /*text colour*/
+    color: rgb(255, 255, 255); /*text colour*/
     min-height: 500px;
     background-size: cover;
     background-attachment: fixed;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
 }
 .home .max-width{
     margin: auto 0 auto 30px;
 }
 .home .home-content .text-1{
     font-size: 27px;
+    font-weight: 600;
 }
 .home .home-content .text-2{
     font-size: 75px;
@@ -195,6 +198,7 @@ section .title::after{
 .home .home-content .text-3 span{
     color: crimson;
     font-weight: 500;
+    margin-left: -3px;
 }
 .home .home-content .text-4{
     font-size: 40px;
@@ -202,7 +206,7 @@ section .title::after{
 }
 .home .home-content .text-4 span{
     color: crimson;
-    font-weight: 500;
+    font-weight: 600;
 }
 .home .home-content a{
     display: inline-block;
@@ -222,9 +226,13 @@ section .title::after{
 }
 
 /* about section styling */
+.about{
+    color: rgb(255, 254, 254);
+    background:rgb(0, 0, 0);
+}
 .about .title::before,
 .title::before{
-    background: #111;
+    background: rgb(255, 255, 255); /*Bar*/
 }
 .about .about-content .left{
     width: 45%;
@@ -252,7 +260,7 @@ section .title::after{
 .about .about-content .right a{
     display: inline-block;
     background: crimson;
-    color: #fff;
+    color: #fff; /*View my resume*/
     font-size: 20px;
     font-weight: 500;
     padding: 10px 30px;
@@ -269,7 +277,7 @@ section .title::after{
 /* interests section styling */ 
 .interests{
     color:#fff;
-    background: black;
+    background: rgb(0, 0, 0);
 }
 .interests .title::before,
 .title::before{
@@ -312,10 +320,13 @@ section .title::after{
 }
 
 /* skills section styling */
-
+.skills{
+    color: rgb(255, 254, 254);
+    background:rgb(0, 0, 0);
+}
 .skills .title::before,
 .title::before{
-    background: #111;
+    background: rgb(255, 255, 255);
     /*content: "what i know";*/
 }
 .skills .skills-content .column{
@@ -378,11 +389,23 @@ section .title::after{
 .skills-content .right .java::before{
     width: 90%;
 }
+.skills-content .right .c::before{
+    width: 90%;
+}
 .skills-content .right .microsoft::before{
+    width: 90%;
+}
+.skills-content .right .CPP::before{
     width: 80%;
 }
-.skills-content .right .csharp::before{
+.skills-content .right .python::before{
+    width: 80%;
+}
+.skills-content .right .MATLAB::before{
     width: 75%;
+}
+.skills-content .right .verilog::before{
+    width: 70%;
 }
 .skills-content .right .html::before{
     width: 60%;
@@ -390,17 +413,12 @@ section .title::after{
 .skills-content .right .css::before{
     width: 60%;
 }
-.skills-content .right .python::before{
-    width: 20%;
-}
-.skills-content .right .c::before{
-    width: 20%;
-}
+
 
 /* projects section styling */
 .projects, .contact{
     color:#fff;
-    background: #111;
+    background: rgb(0, 0, 0);
 }
 .projects .title::before,
 .title::before{
@@ -546,9 +564,9 @@ section .title::after{
 
 /* footer section styling */
 footer{
-    background: rgb(17, 17, 17);
+    background: rgb(255, 255, 255);
     padding: 15px 23px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-align: center;
 }
 footer span a{
@@ -703,5 +721,6 @@ footer span a:hover{
 	top: 0;
 	left: 0;
 	z-index: -999;
+    background: rgb(0,0,0);
   }
 
